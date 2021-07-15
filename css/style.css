@@ -15,7 +15,9 @@
   text-decoration: none;
 }
 
-/* --- Common Style --- */
+/* ------------------------------------------
+|                 Common Style   
+_____________________________________________*/
 body {
   background: #535880;
   background-image: linear-gradient(#242846, #535880);
@@ -45,6 +47,25 @@ img {
   background: #e02c6d;
 }
 
+/* "Watch" Button animation */
+.watch-button {
+  position: relative;
+  top: 2px;
+  left: 0px;
+  animation: watch-button 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes watch-button {
+  50% {
+    left: 8px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -53,11 +74,17 @@ main {
 
 .highlight:hover {
   color: #e02c6d;
+  transition: color 0.5s;
+}
+
+.image-effect:hover {
+  transform: scale(1.1, 1.1);
+  transition: transform 1s;
 }
 
 /* ------------------------------------------
-/       Navigation Menu And Top Banner   
-/-------------------------------------------- */
+|       Navigation Menu And Top Banner   
+_____________________________________________*/
 
 /* Navigation Menu */
 .header-section {
@@ -85,6 +112,44 @@ nav > ul > li:first-child {
   margin-left: 0;
 }
 
+nav > ul > li:hover a {
+  color: #e02c6d;
+  transition: 0.5s;
+}
+
+nav > ul > li:last-child a {
+  color: #e02c6d;
+  text-transform: uppercase;
+}
+
+.fa-ticket-alt {
+  transform: rotate(45deg);
+  color: #e02c6d;
+}
+
+#mobile-menu {
+  font-size: 24px;
+  display: none;
+}
+
+/* Login Button Animation */
+.login i {
+  position: relative;
+  right: 0px;
+  animation: login 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes login {
+  50% {
+    right: 8px;
+  }
+
+  100% {
+    right: 0px;
+  }
+}
+
 /* Top Heading */
 .top-heading {
   font-size: 64px;
@@ -98,15 +163,18 @@ nav > ul > li:first-child {
 .animate-banner {
   width: 556.01px;
   height: 456px;
+  position: relative;
 }
 
 .animate-banner img {
+  position: absolute;
   margin-top: 18px;
 }
 
 /* ---------------------------------------------------
-/                   Featured Player 
-------------------------------------------------------*/
+|                   Featured Player 
+______________________________________________________*/
+
 .featured-players,
 .schedules-section {
   margin-bottom: 30px;
@@ -126,10 +194,11 @@ nav > ul > li:first-child {
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
 
-.player .thumbnail img {
+.player .thumbnail {
   max-width: 300px;
   height: 256px;
   margin: 15px;
+  overflow: hidden;
   cursor: pointer;
 }
 
@@ -155,8 +224,9 @@ nav > ul > li:first-child {
 }
 
 /* ---------------------------------------------------
-/               Live Watch Section 
-------------------------------------------------------*/
+|               Live Watch Section 
+______________________________________________________*/
+
 .live-section-wraper {
   margin: 150px auto;
 }
@@ -176,11 +246,16 @@ nav > ul > li:first-child {
   margin: 10px 0 24px;
 }
 
+.live-section-wraper div.col-50 {
+  overflow: hidden;
+}
+
 /* ---------------------------------------------------
-/               Highlight Section Start Below 
-------------------------------------------------------*/
+|               Highlight Section Start Below 
+______________________________________________________*/
+
 #news {
-  background: #242846;
+  background: rgba(36, 40, 70, 0.3);
   padding: 50px 70px;
   border-radius: 5px;
 }
@@ -194,8 +269,7 @@ nav > ul > li:first-child {
 .highlights {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-row-gap: 20px;
-  grid-column-gap: 20px;
+  grid-gap: 15px;
 }
 
 .highlight-content {
@@ -205,9 +279,10 @@ nav > ul > li:first-child {
   background: #474c72;
 }
 
-.highlight-content .article-thumbnail img {
-  width: 177px;
-  height: 117px;
+.article-thumbnail img {
+  width: 180px;
+  height: 120px;
+  overflow: hidden;
   cursor: pointer;
 }
 
@@ -222,8 +297,9 @@ nav > ul > li:first-child {
 }
 
 /* ---------------------------------------------------
-/               NewsLetter Start Below 
-------------------------------------------------------*/
+|               NewsLetter Start Below 
+______________________________________________________*/
+
 .newsletter {
   margin: 100px 0;
 }
@@ -236,26 +312,32 @@ nav > ul > li:first-child {
 
 form {
   padding: 50px 100px;
-  background: #242846;
+  background: rgba(36, 40, 70, 0.3);
   border-radius: 5px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
 
-input[type="email"] {
+input[type="tel"] {
+  font-weight: 500;
+  color: #e02c6d;
   width: 350px;
   padding: 10px;
   margin: 8px 0;
-  display: inline-block;
   border: none;
+  outline: none;
+}
+
+input[type="tel"]:focus {
+  border: 1px solid #e02c6d;
 }
 
 button {
-  color: white;
+  color: #fff;
   background-color: #e02c6d;
   border: none;
   width: 100px;
   padding: 11px;
   margin: 8px 0;
-  display: inline-block;
   cursor: pointer;
 }
 
@@ -264,8 +346,13 @@ button:hover {
 }
 
 /* ---------------------------------------------------
-/               Page Footer Start Below 
-------------------------------------------------------*/
+|               Page Footer Start Below 
+______________________________________________________*/
+.footer {
+  background: #242846;
+  padding-top: 50px;
+}
+
 .page-footer {
   display: flex;
   flex-direction: column;
@@ -283,12 +370,28 @@ button:hover {
 }
 
 .social-links a {
-  font-size: 20px;
-  color: #969bab;
+  font-size: 14px;
   background: #e7e7e8;
-  margin: 0 5px;
-  padding: 5px 10px;
+  margin-left: 5px;
+  padding: 5px 9px;
   border-radius: 50%;
+}
+
+.social-links a:first-child {
+  margin-left: 0;
+}
+
+.social-links a:hover {
+  background: #e02c6d;
+  transition: background 0.5s;
+}
+
+.social-links a i {
+  color: #969bab;
+}
+
+.social-links a:hover i {
+  color: #fff;
 }
 
 .page-footer span {
@@ -297,6 +400,103 @@ button:hover {
   margin-bottom: 63px;
 }
 
+/* Back to Top Button */
+.back-to-top {
+  position: absolute;
+  top: 4865px;
+  right: 100px;
+}
+
+.fa-chevron-circle-up {
+  font-size: 30px;
+  color: #e02c6d;
+}
+
 /* ---------------------------------------------------
-/                      Media Query 
-------------------------------------------------------*/
+|                      Media Query 
+_______________________________________________________*/
+/*
+
+____________________ Layout For Mobile ____________________**/
+
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 90%;
+  }
+
+  .header-section {
+    height: 90%;
+  }
+
+  #nav {
+    display: none;
+  }
+
+  #mobile-menu {
+    display: block;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .highlights {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .logo {
+    max-width: 250px;
+    height: 63px;
+  }
+
+  .back-to-top {
+    top: 7245px;
+    right: 50px;
+  }
+}
+
+/*_______________________ Layout For Tablet ____________________*/
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .container {
+    width: 90%;
+  }
+
+  .header-section {
+    height: 90%;
+  }
+
+  #nav {
+    display: none;
+  }
+
+  #mobile-menu {
+    display: block;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .highlights {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .logo {
+    max-width: 300px;
+    height: 63px;
+  }
+
+  .back-to-top {
+    top: 7245px;
+    right: 50px;
+  }
+}

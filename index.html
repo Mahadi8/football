@@ -9,30 +9,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header-section">
+    <header id="home-page" class="header-section">
         <!-- Navigation Menu And Top Banner -->
         <div class="container top-nav">
             <nav>
-                <ul>
+                <ul id="nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#player">Teams</a></li>
-                    <li><a href="">Schedule</a></li>
+                    <li><a href="#">Schedule</a></li>
                     <li><a href="#news">News</a></li>
-                    <li><a href="">Shop</a></li>
-                    <li><a href=""><i class="fas fa-ticket-alt"></i> Buy Tickets</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li>
+                        <a href="#"><i class="fas fa-ticket-alt"></i> Buy Tickets</a>
+                    </li>
                 </ul>
+                <span id="mobile-menu"><i class="fas fa-bars"></i></span>
             </nav>
             <span>
-                <a class="btn" href="intex.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+                <a class="btn login" href="intex.html"><i class="fas fa-sign-in-alt"></i> Login</a>
             </span>
         </div>
         <div class="container row">
             <div class="col-50">
                 <h1 class="top-heading"><span class="highlight">Conmebol</span><br>Copa <span class="highlight">America</span> <br>2021</h1>
-                <a  class="btn" href="#">Watch Live <i class="fas fa-arrow-right"></i></a>
+                <a  class="btn" href="#">Watch Live <i class="fas fa-arrow-right watch-button"></i></a>
             </div>
             <div class="animate-banner col-50">
-                <img src="images/banner.png" alt="">
+                <img class="image-effect" src="images/banner.png" alt="sky image">
+                <img class="image-effect" src="images/player.png" alt="Football Player">
             </div>
         </div>
     </header>
@@ -42,7 +46,7 @@
             <div class="players">
                 <article class="player">
                     <div class="thumbnail">
-                        <img src="images/players/player-1.png" alt="">
+                        <img class="image-effect" src="images/players/player-1.png" alt="Neymar">
                     </div>
                     <div class="player-info">
                         <h3 class="player-title">
@@ -53,7 +57,7 @@
                 </article>
                 <article class="player">
                     <div class="thumbnail">
-                        <img src="images/players/player-2.png" alt="">
+                        <img class="image-effect" src="images/players/player-2.png" alt="Messi">
                     </div>
                     <div class="player-info">
                         <h3 class="player-title">
@@ -64,7 +68,7 @@
                 </article>
                 <article class="player">
                     <div class="thumbnail">
-                        <img src="images/players/player-3.png" alt="">
+                        <img class="image-effect" src="images/players/player-3.png" alt="Ronaldo">
                     </div>
                     <div class="player-info">
                         <h3 class="player-title">
@@ -75,7 +79,7 @@
                 </article>
                 <article class="player">
                     <div class="thumbnail">
-                        <img src="images/players/player-4.png" alt="">
+                        <img class="image-effect" src="images/players/player-4.png" alt="Paulo">
                     </div>
                     <div class="player-info">
                         <h3 class="player-title">
@@ -86,7 +90,7 @@
                 </article>
                 <article class="player">
                     <div class="thumbnail">
-                        <img src="images/players/player-5.png" alt="">
+                        <img class="image-effect" src="images/players/player-5.png" alt="Ozil">
                     </div>
                     <div class="player-info">
                         <h3 class="player-title">
@@ -97,7 +101,7 @@
                 </article>
                 <article class="player">
                     <div class="thumbnail">
-                        <img src="images/players/player-6.png" alt="">
+                        <img class="image-effect" src="images/players/player-6.png" alt="Mauro">
                     </div>
                     <div class="player-info">
                         <h3 class="player-title">
@@ -108,7 +112,7 @@
                 </article>
                 <article class="player">
                     <div class="thumbnail">
-                        <img src="images/players/player-7.png" alt="">
+                        <img class="image-effect" src="images/players/player-7.png" alt="Maria">
                     </div>
                     <div class="player-info">
                         <h3 class="player-title">
@@ -119,18 +123,18 @@
                 </article>
                 <article class="player">
                     <div class="thumbnail">
-                        <img src="images/players/player-8.png" alt="">
+                        <img class="image-effect" src="images/players/player-8.png" alt="Kylian">
                     </div>
                     <div class="player-info">
                         <h3 class="player-title">
-                            <a href="#"><span class="highlight">Kylian Mbappé</span></a>
+                            <a href="#"><span class="highlight">Kylian Mbappe</span></a>
                         </h3>
                         <p class="about-player">Kylian Mbappé Lottin is a French professional footballer who plays as a forward for Paris Saint-Germain and the France national team.</p>
                     </div>
                 </article>
                 <article class="player">
                     <div class="thumbnail">
-                        <img src="images/players/player-9.png" alt="">
+                        <img class="image-effect" src="images/players/player-9.png" alt="Salah">
                     </div>
                     <div class="player-info">
                         <h3 class="player-title">
@@ -141,7 +145,7 @@
                 </article>
                 <article class="player">
                     <div class="thumbnail">
-                        <img src="images/players/player-10.png" alt="">
+                        <img class="image-effect" src="images/players/player-10.png" alt="Harry">
                     </div>
                     <div class="player-info">
                         <h3 class="player-title">
@@ -152,7 +156,7 @@
                 </article>
                 <article class="player">
                     <div class="thumbnail">
-                        <img src="images/players/player-11.png" alt="">
+                        <img class="image-effect" src="images/players/player-11.png" alt="Kevin">
                     </div>
                     <div class="player-info">
                         <h3 class="player-title">
@@ -163,7 +167,7 @@
                 </article>
                 <article class="player">
                     <div class="thumbnail">
-                        <img src="images/players/player-12.png" alt="">
+                        <img class="image-effect" src="images/players/player-12.png" alt="Coutinho">
                     </div>
                     <div class="player-info">
                         <h3 class="player-title">
@@ -180,10 +184,10 @@
             <div class="live-section col-50">
                 <h2>All <span class="highlight">Highlights</span> <br>Copa <span class="highlight">America</span> 2021</h2>
                 <p>Amet minim mollit non deserunt ullamco est sit <br>dolor do amet sint. Velit officia consequat <br>duis enim velit mollit. Exercitation veniam <br>consequat sunt nostrud amet.</p>
-                <a  class="btn" href="#">Watch Now <i class="fas fa-arrow-right"></i></a>
+                <a  class="btn" href="#">Watch Now <i class="fas fa-arrow-right watch-button"></i></a>
             </div>
             <div class="col-50">
-                <img src="images/match.png" alt="">
+                <img class="image-effect" src="images/match.png" alt="Football Match">
             </div>
         </section>
         <!-- Live Section Ends Here, Highlights Section Start Below --->
@@ -194,7 +198,7 @@
                 <div class="highlights">
                     <article class="highlight-content">
                         <div class="article-thumbnail">
-                            <img src="images/highlights/Nota-Canchita-Get.jpg" alt="">
+                            <img class="image-effect" src="images/highlights/Nota-Canchita-Get.jpg" alt="Nota-Canchit">
                         </div>
                         <div class="article-info">
                             <h3 class="article-title">One by one, the team of the CONMEBOL Copa America chosen by GET</h3>
@@ -203,7 +207,7 @@
                     </article>
                     <article class="highlight-content">
                         <div class="article-thumbnail">
-                            <img src="images/highlights/Notas-17.png" alt="">
+                            <img class="image-effect" src="images/highlights/Notas-17.png" alt="Notas-17">
                         </div>
                         <div class="article-info">
                             <h3 class="article-title">All of the CONMEBOL Copa America champions</h3>
@@ -212,7 +216,7 @@
                     </article>
                     <article class="highlight-content">
                         <div class="article-thumbnail">
-                            <img src="images/highlights/Nota-15.png" alt="">
+                            <img class="image-effect" src="images/highlights/Nota-15.png" alt="Nota-15">
                         </div>
                         <div class="article-info">
                             <h3 class="article-title">Head to Head: Comparing Tite and Scaloni's numbers ahead of the final</h3>
@@ -221,7 +225,7 @@
                     </article>
                     <article class="highlight-content">
                         <div class="article-thumbnail">
-                            <img src="images/highlights/03-8.png" alt="">
+                            <img class="image-effect" src="images/highlights/03-8.png" alt="03-8">
                         </div>
                         <div class="article-info">
                             <h3 class="article-title">Referees confirmed for the CONMEBOL Copa America 2021 Semi-finals</h3>
@@ -230,7 +234,7 @@
                     </article>
                     <article class="highlight-content">
                         <div class="article-thumbnail">
-                            <img src="images/highlights/URUGUAY-COLOMBIA-750PX.jpg" alt="">
+                            <img class="image-effect" src="images/highlights/URUGUAY-COLOMBIA-750PX.jpg" alt="/URUGUAY-COLOMBIA">
                         </div>
                         <div class="article-info">
                             <h3 class="article-title">Uruguay face Colombia for a place in the semi-final </h3>
@@ -239,7 +243,7 @@
                     </article>
                     <article class="highlight-content">
                         <div class="article-thumbnail">
-                            <img src="images/highlights/BOLIVIA-URUGUAY-750px-2.jpg" alt="">
+                            <img class="image-effect" src="images/highlights/BOLIVIA-URUGUAY-750px-2.jpg" alt="BOLIVIA-URUGUAY">
                         </div>
                         <div class="article-info">
                             <h3 class="article-title">Bolivia and Uruguay play for final Group A qualification spot</h3>
@@ -248,7 +252,7 @@
                     </article>
                     <article class="highlight-content">
                         <div class="article-thumbnail">
-                            <img src="images/highlights/000_9CG3C3.jpg" alt="">
+                            <img class="image-effect" src="images/highlights/000_9CG3C3.jpg" alt="000_9CG3C3">
                         </div>
                         <div class="article-info">
                             <h3 class="article-title">Four teams battle for a place in the CONMEBOL Copa América 2021 final</h3>
@@ -257,7 +261,7 @@
                     </article>
                     <article class="highlight-content">
                         <div class="article-thumbnail">
-                            <img src="images/highlights/000_9DV7NC.jpg" alt="">
+                            <img class="image-effect" src="images/highlights/000_9DV7NC.jpg" alt="000_9DV7NC">
                         </div>
                         <div class="article-info">
                             <h3 class="article-title">Colombia beat Uruguay on penalties to qualify for the semi-finals</h3>
@@ -272,24 +276,33 @@
         <section class=" container newsletter">
             <h2 class="highlight">Live update</h2>
                 <form action="">
-                        <input type="email" placeholder="Email Address" name="email" required>
+                        <input type="tel" placeholder="Mobile Number" name="cell" required>
                         <button><i class="far fa-paper-plane"></i></button>
                 </form>
         </section>
     </main>
-    <!-- Main Section Ends Here, Page Footer Section Start Below --->
+    <!-- Main Section Ends Here, Page Footer Start Below --->
 
-    <footer class="container page-footer">
-        <div class="logo">
-            <img src="images/logo.png" alt="Football">
+    <footer class="footer">
+        <div class="container page-footer">
+            <div class="logo">
+                <img src="images/logo.png" alt="Football">
+            </div>
+            <div class="social-links">
+                <a href="https://dribbble.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" title="Dribbble"><i class="fab fa-dribbble"></i></a>
+                <a href="https://twitter.com/?lang=en" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/" target="_blank" title="Youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <span>
+                <span class="highlight">Copyright</span> &copy; 2022 Football
+            </span>
+            
+            <!-- Back to Top Button -->
+            <span class="back-to-top" title="Back To Top">
+                <a href="#home-page"><i class="fas fa-chevron-circle-up"></i></a>
+            </span>
         </div>
-        <div class="social-links">
-            <a href="https://dribbble.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-dribbble"></i></a>
-            <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-        </div>
-        <span>Copyright &copy; 2022 Football</span>
     </footer>
 </body>
 </html>
