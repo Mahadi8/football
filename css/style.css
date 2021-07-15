@@ -440,12 +440,24 @@ ____________________ Layout For Mobile ____________________**/
     flex-direction: column;
   }
 
-  .players {
+  .col-50 h1 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  .players,
+  .highlights {
     grid-template-columns: repeat(1, 1fr);
   }
 
   .highlights {
-    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+
+  .highlight-content {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
   }
 
   .logo {
@@ -454,8 +466,7 @@ ____________________ Layout For Mobile ____________________**/
   }
 
   .back-to-top {
-    top: 7245px;
-    right: 50px;
+    display: none;
   }
 }
 
