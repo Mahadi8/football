@@ -3,3 +3,53 @@
 
 /* --- FontAwesome --- */
 @import url(fontawesome.all.min.css);
+
+/* --- Resetting default styles --- */
+* {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* ------------------------------------------
+/       Navigation Menu And Top Banner   
+/-------------------------------------------- */
+
+/* Navigation Menu */
+.header-section {
+  height: 677px;
+  margin-bottom: 70px;
+  background: #242846;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 42px 0 49px;
+}
+
+nav > ul {
+  display: flex;
+}
+
+nav > ul > li {
+  margin-left: 36px;
+}
+
+nav > ul > li:first-child {
+  margin-left: 0;
+}
+
+/* Top Heading */
+.top-heading {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 80px;
+  margin: 72px 0 27px 0;
+  cursor: pointer;
+}
