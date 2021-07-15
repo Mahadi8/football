@@ -212,3 +212,37 @@ button {
 button:hover {
   opacity: 0.8;
 }
+
+/* ---------------------------------------------------
+/               Page Footer Start Below 
+------------------------------------------------------*/
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  max-width: 483.87px;
+  height: 110px;
+  cursor: pointer;
+}
+
+.social-links {
+  margin: 20px 0;
+}
+
+.social-links a {
+  font-size: 20px;
+  color: #969bab;
+  background: #e7e7e8;
+  margin: 0 5px;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+.page-footer span {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 63px;
+}
