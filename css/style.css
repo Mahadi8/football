@@ -125,3 +125,48 @@ nav > ul > li:first-child {
   line-height: 28px;
   margin: 10px 0 24px;
 }
+
+/* ---------------------------------------------------
+/               Highlight Section Start Below 
+------------------------------------------------------*/
+#news {
+  background: #242846;
+  padding: 50px 70px;
+  border-radius: 5px;
+}
+
+.section-title {
+  margin-bottom: 50px;
+  border-bottom: 2px solid #e02c6d;
+  text-transform: uppercase;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+}
+
+.highlight-content {
+  display: flex;
+  padding: 25px;
+  border-radius: 5px;
+  background: #474c72;
+}
+
+.highlight-content .article-thumbnail img {
+  width: 177px;
+  height: 117px;
+  cursor: pointer;
+}
+
+.article-info {
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.article-title {
+  font-size: 18px;
+  font-weight: 400;
+}
