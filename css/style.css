@@ -15,6 +15,46 @@
   text-decoration: none;
 }
 
+/* --- Common Style --- */
+body {
+  background: #535880;
+  background-image: linear-gradient(#242846, #535880);
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1163px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-50 {
+  max-width: 50%;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 24px;
+  background: #e02c6d;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.highlight:hover {
+  color: #e02c6d;
+}
+
 /* ------------------------------------------
 /       Navigation Menu And Top Banner   
 /-------------------------------------------- */
@@ -52,6 +92,16 @@ nav > ul > li:first-child {
   line-height: 80px;
   margin: 72px 0 27px 0;
   cursor: pointer;
+}
+
+/* Top Animated Player Banner */
+.animate-banner {
+  width: 556.01px;
+  height: 456px;
+}
+
+.animate-banner img {
+  margin-top: 18px;
 }
 
 /* ---------------------------------------------------
@@ -246,3 +296,7 @@ button:hover {
   line-height: 24px;
   margin-bottom: 63px;
 }
+
+/* ---------------------------------------------------
+/                      Media Query 
+------------------------------------------------------*/
