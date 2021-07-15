@@ -170,3 +170,45 @@ nav > ul > li:first-child {
   font-size: 18px;
   font-weight: 400;
 }
+
+/* ---------------------------------------------------
+/               NewsLetter Start Below 
+------------------------------------------------------*/
+.newsletter {
+  margin: 100px 0;
+}
+
+.newsletter h2 {
+  margin-bottom: 50px;
+  border-bottom: 2px solid #e02c6d;
+  text-transform: uppercase;
+}
+
+form {
+  padding: 50px 100px;
+  background: #242846;
+  border-radius: 5px;
+}
+
+input[type="email"] {
+  width: 350px;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+}
+
+button {
+  color: white;
+  background-color: #e02c6d;
+  border: none;
+  width: 100px;
+  padding: 11px;
+  margin: 8px 0;
+  display: inline-block;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
